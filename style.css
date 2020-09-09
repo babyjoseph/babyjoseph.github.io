@@ -1,7 +1,7 @@
 h1 {
     text-align: center;
     padding: 25px;
-    font-family: monospace, Times;
+    font-family: monospace, 'Times New Roman', Times, serif;
     border: 10px solid black;
     border-radius: 180px;
 }
