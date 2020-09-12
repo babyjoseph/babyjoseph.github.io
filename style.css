@@ -1,5 +1,8 @@
 #myHeader {
     display: flex;
+    flex-direction: column;
+}
+h1{
     text-align: center;
     padding: 25px;
     font-family: monospace, 'Times New Roman', Times, serif;
