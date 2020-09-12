@@ -11,6 +11,7 @@ h1{
 }
 
 #myFooter{
+    padding-top: 5px;
     border-top: 2px solid black;
     font-family: monospace;
     padding-left: 25px;
