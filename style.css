@@ -3,6 +3,7 @@ body {
     flex-direction: column;
 }
 #myHeader{
+    background-image: src="/background/arch.png";
     text-align: center;
     padding: 5px;
     font-family: 'Permanent Marker',serif;
