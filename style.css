@@ -11,14 +11,15 @@ body {
 }
 
 #myContent{
-				text-align: center;
-				padding-top: 0px;
-				padding-left:5px;
-				padding-right:5px;
-				margin-top:5px;
-				border-top: 5px solid black;
-				border-radius: 180px;
-				}
+    text-align: center;
+    padding-top: 0px;
+    padding-left:5px;
+    padding-right:5px;
+    margin-top:5px;
+    border-top: 5px solid black;
+    border-bottom:5px solid black;
+    border-radius: 180px;
+}
 #myFooter{
     padding-top: 5px;
     border-top: 2px solid black;
