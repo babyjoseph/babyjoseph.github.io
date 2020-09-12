@@ -1,4 +1,5 @@
-h1 {
+#myHeader {
+    display: flex;
     text-align: center;
     padding: 25px;
     font-family: monospace, 'Times New Roman', Times, serif;
