@@ -1,38 +1,43 @@
 body,html {
-    size: 100%;
+    height: 100%;
     margin: 0;
 }
-#myBody{
-    background-image: url(background/try.jpg);
-    height: 100%;
-    background-repeat: no-repeat;
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url("background/wp1.png"); 
+    background-repeat: no-repeat;   
     background-position: center;
+    background-size: cover;
 }
-#myHeader{
-    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
-    background-position: center;
-    background-size: contain;
+.myHeader{
+    color: white;
     text-align: center;
-    text-shadow: 5px -5px 5px white, -5px 5px 5px white;
-    padding: 5px;
-    font-family: 'Permanent Marker',serif;
-    border: 5px solid black;
-    border-radius: 180px;
-    color: black;
+    font-family: 'Lusitana', serif;
+    font-size: 5vh;
 }
-#myContent{
+.myHeader:hover{
+    text-shadow: -5px 2px gray;
+}
+.myContent{
+    float: right;
+    color: white;
     padding: 25px;
-    box-shadow: -2px 5px 5px white,-5px 8px pink;
-    text-align: center;
-    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
+    flex: 1 0 auto;
     margin: 25px;
-    border: 5px solid black;
+    border-radius: 50px;
+    text-align: center;
 }
-#myFooter{
-    background-image: linear-gradient(to top, #d9afd9 0%, #97d9e1 100%);
-    margin-top: 5px;
-    padding-top: 5px;
-    border-top: 3px solid black;
-    font-family: monospace;
+.myNav{
+    float: left;
+}
+.myFooter{
+    flex-shrink: 0;
+}
+footer{
     padding-left: 25px;
+    border-top: 5px solid black;
+    color: white;
+    background-color: gray;
 }
