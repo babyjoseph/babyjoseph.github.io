@@ -6,13 +6,13 @@ body,html {
 body{
     display: flex;
     flex-direction: column;
-    background: url("background/wp1.png"); 
+    background: url("background/animewp.jpg"); 
     background-repeat: no-repeat;   
     background-position: center;
     background-size: cover;
 }
 .myHeader{
-    color: white;
+    color: whitesmoke;
     text-align: center;
     font-family: 'Lusitana', serif;
     font-size: 2em;
@@ -24,30 +24,48 @@ body{
 }
 @keyframes header{
     100%{
-        text-shadow: 5px 2px 3px red;
+        text-shadow: 5px 2px 3px black;
     }
 }
 .myContent{
-    float: right;
-    color: white;
-    padding: 1rem;
     flex: 1 0 auto;
     margin: 1rem;
     border-radius: 50px;
+    background: black;
+    opacity: .8;
+}
+.contents{
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5em;
+    color: white;
+    padding: 1rem;
     text-align: center;
+    font-weight: bold;
 }
 .myNav{
     text-align: center;
+    font-size: 2em;
     font-family: 'Major Mono Display', monospace;
 }
-#text{
+.nav:hover{
+    animation-name: Nav;
+    animation-duration: 2ms;
+    animation-fill-mode: forwards;
+}
+@keyframes Nav{
+    100%{
+        background: gray;
+        opacity: .8;
+    }
+}
+.myNav a{
+    color: white;
 }
 .myFooter{
     flex-shrink: 0;
 }
 footer{
-    padding-left: 25px;
-    border-top: 5px solid black;
+    padding: 5px;
     color: white;
     background-color: gray;
 }
