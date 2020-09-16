@@ -6,7 +6,7 @@ body,html {
 body{
     display: flex;
     flex-direction: column;
-    background-image: url("background/wp1.png"); 
+    background: url("background/wp1.png"); 
     background-repeat: no-repeat;   
     background-position: center;
     background-size: cover;
@@ -18,7 +18,14 @@ body{
     font-size: 2em;
 }
 .myHeader:hover{
-    text-shadow: -5px 2px gray;
+    animation-name: header;
+    animation-duration: 2ms;
+    animation-fill-mode: forwards;
+}
+@keyframes header{
+    100%{
+        text-shadow: 5px 2px 3px red;
+    }
 }
 .myContent{
     float: right;
@@ -30,7 +37,10 @@ body{
     text-align: center;
 }
 .myNav{
-    float: left;
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+}
+#text{
 }
 .myFooter{
     flex-shrink: 0;
