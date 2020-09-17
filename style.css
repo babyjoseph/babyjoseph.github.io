@@ -1,3 +1,9 @@
+@media screen and (max-width:480px){
+    .myHeader{ width: 100%; }
+    .myContent{ width: 100%; }
+    .myNav{ width: 100%; }
+    .myFooter{ width: 100%; }
+}
 body,html {
     height: 100%;
     margin: 0;
@@ -12,11 +18,13 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+/*Heding Part*/
 .myHeader{
     color: whitesmoke;
     text-align: center;
     font-family: 'Lusitana', serif;
     font-size: 2em;
+    text-shadow: 5px 2px 3px black;
 }
 .myHeader:hover{
     animation-name: header;
@@ -25,9 +33,10 @@ body{
 }
 @keyframes header{
     100%{
-        text-shadow: 5px 2px 3px black;
+        text-shadow: 5px 2px 3px red;
     }
 }
+/* Content part */
 .myContent{
     flex: 1 0 auto;
     margin: 1rem;
@@ -43,10 +52,20 @@ body{
     text-align: center;
     font-weight: bold;
 }
+/* Navigation part */
 .myNav{
-    text-align: center;
+    display: flex;
+    align-self: center;
     font-size: 2em;
     font-family: 'Major Mono Display', monospace;
+}
+.nav{
+    padding: 5px;
+    text-decoration: none;
+    background: darkgray;
+    border-radius: 25px;
+    opacity: .9;
+    box-shadow: -2px 2px 5px black;
 }
 .nav:hover{
     animation-name: Nav;
@@ -62,16 +81,13 @@ body{
 .myNav a{
     color: white;
 }
-@media (max-width: 720px){
-    .myNav a{
-        font-size: 1em;
-    }
-}
+/* Footer part */
 .myFooter{
     flex-shrink: 0;
 }
 footer{
     padding: 5px;
+    font-size: 1em;
     color: white;
     background-color: gray;
 }
