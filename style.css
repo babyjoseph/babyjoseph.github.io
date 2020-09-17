@@ -22,7 +22,7 @@ body{
 .myHeader{
     color: whitesmoke;
     text-align: center;
-    font-family: 'Monoton', cursive;
+    font-family: 'Geostar Fill', cursive;
     font-size: 2em;
     text-shadow: 5px 2px 3px black;
 }
@@ -33,7 +33,7 @@ body{
 }
 @keyframes header{
     100%{
-        text-shadow: 5px 2px 3px red;
+        text-shadow: 5px 2px 3px darkslategray;
     }
 }
 /* Content part */
@@ -57,13 +57,14 @@ body{
     display: flex;
     align-self: center;
     font-size: 2em;
-    font-family: 'Major Mono Display', monospace;
 }
 .nav{
     padding: 5px;
     text-decoration: none;
+    font-family: 'Major Mono Display', monospace;
     background: darkgray;
     border-radius: 25px;
+    margin: .3rem;
     opacity: .9;
     box-shadow: -2px 2px 5px black;
 }
