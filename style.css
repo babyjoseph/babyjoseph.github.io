@@ -12,11 +12,11 @@ body,html {
 body{
     display: flex;
     flex-direction: column;
-    background: url("background/animewp.jpg"); 
-    background-repeat: no-repeat;   
+    background: darkslategrey; 
+    /* background-repeat: no-repeat;   
     background-position: center center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
 }
 /*Heding Part*/
 .myHeader{
