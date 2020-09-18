@@ -22,8 +22,8 @@ body{
 .myHeader{
     color: whitesmoke;
     text-align: center;
-    font-family: 'Geostar Fill', cursive;
-    font-size: 2em;
+    font-family: 'Caesar Dressing', cursive;
+    font-size: 3em;
     text-shadow: 5px 2px 3px black;
 }
 .myHeader:hover{
@@ -33,16 +33,17 @@ body{
 }
 @keyframes header{
     100%{
-        text-shadow: 5px 2px 3px darkslategray;
+        color: black;
+        text-shadow: 5px 2px 3px rgb(255, 255, 255);
     }
 }
 /* Content part */
 .myContent{
     flex: 1 0 auto;
-    margin: 1rem;
+    margin: .5rem;
     border-radius: 50px;
     background: black;
-    opacity: .8;
+    opacity: .7;
 }
 .contents{
     font-family: 'Poiret One', cursive;
@@ -64,9 +65,12 @@ body{
     font-size: 1.5rem;
     background: darkgray;
     border-radius: 25px;
-    margin: .3rem;
+    margin-top: 0%;
+    margin-left: .3rem;
+    margin-bottom: .3rem;
     opacity: .9;
     box-shadow: -2px 2px 5px black;
+    color: white;
 }
 .nav:hover{
     animation-name: Nav;
@@ -78,9 +82,6 @@ body{
         background: gray;
         opacity: .8;
     }
-}
-.myNav a{
-    color: white;
 }
 /* Footer part */
 .myFooter{
