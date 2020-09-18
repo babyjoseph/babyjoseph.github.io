@@ -56,12 +56,12 @@ body{
 .myNav{
     display: flex;
     align-self: center;
-    font-size: 2em;
 }
 .nav{
     padding: 5px;
     text-decoration: none;
     font-family: 'Major Mono Display', monospace;
+    font-size: 1.5rem;
     background: darkgray;
     border-radius: 25px;
     margin: .3rem;
