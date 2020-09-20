@@ -1,102 +1,131 @@
 /* This is the default layout */
-.myContainer{
+.myContainer {
   display: grid;
   grid-template: 100px 1fr 1fr 1fr 100px/120px 1fr 1fr;
   /* grid-gap: 5px; */
   grid-template-areas:
-  "h h h"
-  "n1 m m"
-  "n2 m m"
-  "n3 m m"
-  "f f f";
+    "h h h"
+    "n1 m m"
+    "n2 m m"
+    "n3 m m"
+    "f f f";
 }
+
 /* layout to the size of my phone */
-@media screen and (max-width: 720px){
-  .myContainer{
+@media screen and (max-width: 720px) {
+  .myContainer {
     grid-template: 100px 80px 1fr 1fr 100px/120px 1fr 1fr;
     grid-template-areas:
-    "h h h"
-    "n1 n2 n3"
-    "m m m"
-    "m m m"
-    "f f f";
+      "h h h"
+      "n1 n2 n3"
+      "m m m"
+      "m m m"
+      "f f f";
   }
 }
 
-.myHeader{
+.myHeader {
   grid-area: h;
 }
 
-#nav1{
+#nav1 {
   grid-area: n1;
 }
-#nav2{
+
+#nav2 {
   grid-area: n2;
 }
-#nav3{
+
+#nav3 {
   grid-area: n3;
 }
-.myMain{
+
+.myMain {
   grid-area: m;
 }
-.myFooter{
+
+.myFooter {
   grid-area: f;
 }
 
 /* Basic initialization and styles for the page */
-*{
+* {
   margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
   font-size: 100%;
 }
-body,html{
+
+body, html {
   height: 100%;
 }
 
-.myContainer{
-  font-size: 2rem;
-  min-height: 100%;
-  background: rgb(219, 167, 50);
-  /* padding: 5px; */
+body {
+  color: white;
 }
 
-.myHeader{
+.myContainer {
+  font-size: 2rem;
+  min-height: 100%;
+  background-image: url("background/samplewallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.myHeader {
   font-family: 'Caesar Dressing', cursive;
   font-size: 3rem;
-  border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(88, 142, 236);
+  /* background: rgb(88, 142, 236); */
 }
 
-.myNav{
+.myHeader > h1{
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 18px;
+  border-radius: 60%;
+}
+.myHeader>h1:hover{
+  animation-name: meHover;
+  animation-duration: 2ms;
+  animation-fill-mode: forwards;
+}
+@keyframes meHover {
+  100%{
+    background: rgba(0, 0, 0, 0.26);
+  }
+}
+
+.myNav {
   font-family: 'Major Mono Display', monospace;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgb(94, 44, 166);
+  /* background: rgb(94, 44, 166); */
 }
 
-.myMain{
+.myMain {
   font-family: 'Poiret One', cursive;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(179, 62, 159);
+  background: rgba(9, 9, 9, 0.5);
+  border-radius: 50%;
 }
 
-.myFooter{
+.myFooter {
   font-family: 'Poiret One', cursive;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:30px 0;
-  background: rgb(187, 42, 42);
+  padding: 30px 0;
+  /* background: rgb(187, 42, 42); */
 }
