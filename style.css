@@ -1,30 +1,49 @@
+/* This is the default layout */
 .myContainer{
   display: grid;
-  grid-template: 100px 1fr 100px/120px 1fr 1fr;
+  grid-template: 100px 1fr 1fr 1fr 100px/120px 1fr 1fr;
   /* grid-gap: 5px; */
   grid-template-areas:
   "h h h"
-  "n m m"
+  "n1 m m"
+  "n2 m m"
+  "n3 m m"
   "f f f";
+}
+/* layout to the size of my phone */
+@media screen and (max-width: 720px){
+  .myContainer{
+    grid-template: 100px 80px 1fr 1fr 100px/120px 1fr 1fr;
+    grid-template-areas:
+    "h h h"
+    "n1 n2 n3"
+    "m m m"
+    "m m m"
+    "f f f";
+  }
 }
 
 .myHeader{
   grid-area: h;
 }
 
-.myNav{
-  grid-area: n;
+#nav1{
+  grid-area: n1;
 }
-
+#nav2{
+  grid-area: n2;
+}
+#nav3{
+  grid-area: n3;
+}
 .myMain{
   grid-area: m;
 }
-
 .myFooter{
   grid-area: f;
 }
 
-/* Basic styles for the page */
+/* Basic initialization and styles for the page */
 *{
   margin: 0;
   padding: 0;
@@ -61,10 +80,6 @@ body,html{
   justify-content: center;
   align-items: center;
   background: rgb(94, 44, 166);
-}
-
-.myNav > *{
-  margin: auto;
 }
 
 .myMain{
