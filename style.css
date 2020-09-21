@@ -22,6 +22,18 @@
       "m m m"
       "f f f";
   }
+  .myHeader a{
+    font-size: 4.5rem;
+  }
+  .myNav a{
+    font-size: 1.8rem;
+  }
+  .myMain p{
+    font-size: 1.5rem;
+  }
+  .myFooter p{
+    font-size: 1.5rem;
+  }
 }
 
 .myHeader {
@@ -66,7 +78,6 @@ body {
 }
 
 .myContainer {
-  font-size: 2rem;
   min-height: 100%;
   background-image: url("background/samplewallpaper.jpg");
   background-repeat: no-repeat;
@@ -75,32 +86,20 @@ body {
 }
 
 .myHeader {
+  font-size: 5em;
   font-family: 'Caesar Dressing', cursive;
-  font-size: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
   /* background: rgb(88, 142, 236); */
 }
-
-.myHeader > h1{
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  padding: 18px;
-  border-radius: 60%;
+.myHeader a{
+  color: inherit;
+  text-decoration: none;
+  position: relative;
 }
-.myHeader>h1:hover{
-  animation-name: meHover;
-  animation-duration: 2ms;
-  animation-fill-mode: forwards;
-}
-@keyframes meHover {
-  100%{
-    background: rgba(0, 0, 0, 0.26);
-  }
-}
-
 .myNav {
+  font-size: 2em;
   font-family: 'Major Mono Display', monospace;
   /* border: 2px solid black; */
   display: flex;
@@ -109,8 +108,13 @@ body {
   align-items: center;
   /* background: rgb(94, 44, 166); */
 }
+  .myNav a{
+      color: inherit;
+      text-decoration: none;
+  }
 
 .myMain {
+  font-size: 2em;
   font-family: 'Poiret One', cursive;
   /* border: 2px solid black; */
   display: flex;
@@ -119,8 +123,12 @@ body {
   background: rgba(9, 9, 9, 0.5);
   border-radius: 50%;
 }
+.myMain:hover{
+  box-shadow: 0px 0px 10px rgba(102, 102, 102, 0.94);
+}
 
 .myFooter {
+  font-size: 2em;
   font-family: 'Poiret One', cursive;
   /* border: 2px solid black; */
   display: flex;
