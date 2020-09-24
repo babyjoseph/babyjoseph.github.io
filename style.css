@@ -11,7 +11,7 @@
   display: grid;
   -ms-grid-columns: 120px (minmax(0, 1fr))[2];
       grid-template: 100px repeat(3, minmax(0, 1fr)) 90px/120px repeat(2, minmax(0, 1fr));
-  /* grid-gap: 5px; */
+      grid-gap: 5px 5px;
       grid-template-areas:
     "h h h"
     "n1 m m"
