@@ -20,7 +20,7 @@
     "f f f";
 }
 
-/* layout to the size of my phone */
+/* layout of selected devices. */
 @media screen and (max-width: 720px) {
   .myContainer {
     -ms-grid-columns: 120px (minmax(0, 1fr))[2];
@@ -113,6 +113,7 @@
     -ms-grid-row: 5;
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
+    flex-direction: column;
   }
 }
 
