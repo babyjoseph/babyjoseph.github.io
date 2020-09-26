@@ -1,0 +1,36 @@
+.menu-btn{
+    position: absolute;
+    z-index: 1;
+    left: 1rem;
+    top: 1rem;
+    height: 20px;
+    width: 30px;
+    cursor: pointer;
+
+    &--burger{
+        position: absolute;
+        left: 0;
+        top: .5rem;
+        height: 4px;
+        background: white;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: -8px;
+            width: 28px;
+            height: 4px;
+            background: white;
+        }
+
+
+        &::after{
+            content: '';
+            position: absolute;
+            top: 8px;
+            width: 20px;
+            height: 4px;
+            background: white;
+        }
+    }
+}

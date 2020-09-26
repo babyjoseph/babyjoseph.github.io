@@ -29,6 +29,42 @@
   font-weight: 750;
 }
 
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  left: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.menu-btn--burger {
+  position: absolute;
+  left: 0;
+  top: .5rem;
+  height: 4px;
+  background: white;
+}
+
+.menu-btn--burger::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 4px;
+  background: white;
+}
+
+.menu-btn--burger::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  width: 20px;
+  height: 4px;
+  background: white;
+}
+
 body {
   background: #2c2a2a;
   color: #fff;
