@@ -29,40 +29,41 @@
   font-weight: 750;
 }
 
-.menu-btn {
+.menu_btn {
   position: absolute;
   z-index: 1;
-  left: 1rem;
+  right: 1rem;
   top: 1rem;
   height: 20px;
   width: 30px;
   cursor: pointer;
 }
 
-.menu-btn--burger {
+.menu_btn--burger {
   position: absolute;
-  left: 0;
-  top: .5rem;
-  height: 4px;
-  background: white;
+  background: #fff;
+  right: 1rem;
+  top: 0.5rem;
+  width: 24px;
+  height: 3px;
 }
 
-.menu-btn--burger::before {
-  content: '';
+.menu_btn--burger::before {
   position: absolute;
+  content: '';
   top: -8px;
-  width: 28px;
-  height: 4px;
-  background: white;
+  width: 24px;
+  height: 3px;
+  background: #fff;
 }
 
-.menu-btn--burger::after {
-  content: '';
+.menu_btn--burger::after {
   position: absolute;
+  content: '';
   top: 8px;
-  width: 20px;
-  height: 4px;
-  background: white;
+  width: 24px;
+  height: 3px;
+  background: #fff;
 }
 
 body {
