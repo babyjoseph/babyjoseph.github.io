@@ -376,6 +376,12 @@
   .about-bio__info {
     font-size: 1.2rem;
   }
+  .project-bio {
+    padding-top: 20%;
+  }
+  .contact {
+    padding-top: 20%;
+  }
   .social-icons {
     -webkit-transform: scale(1.5, 1.5);
             transform: scale(1.5, 1.5);
