@@ -255,6 +255,73 @@
           transform: rotate(90deg) translate(-3rem, -4rem);
 }
 
+.project-bio {
+  padding-bottom: 2rem;
+  height: 100%;
+  padding-top: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: url("/background/samplewallpaper.jpg") right;
+  background-size: cover;
+}
+
+.project .projects {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.project .projects-project {
+  background: #1a1919;
+  padding: 1.5rem;
+  border-left: 5px solid #6d1717;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.project .projects-project .level {
+  margin-bottom: 1rem;
+}
+
+.project .projects-project .school {
+  margin-bottom: 1.5rem;
+}
+
+.project .projects-project .year {
+  margin-bottom: 1rem;
+}
+
+.project .projects-project .info {
+  margin-bottom: 1rem;
+}
+
+.project .projects-project:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.project .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project footer {
+  -webkit-transform: rotate(90deg) translate(-3rem, -4rem);
+          transform: rotate(90deg) translate(-3rem, -4rem);
+}
+
 body {
   background: #2c2a2a;
   color: #fff;

@@ -1,0 +1,51 @@
+.project{
+    &-bio{
+        padding-bottom: 2rem;
+        height: 100%;
+        padding-top: 40%;
+        align-items: center;
+        text-align: center;
+        background: url("/background/samplewallpaper.jpg") right;
+        background-size: cover;
+    }
+
+    .projects{
+        width: 60vw;
+        margin: 2rem auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+
+        &-project{
+            background: rgb(26, 25, 25);
+            padding: 1.5rem;
+            border-left: 5px solid $secondary-color;
+            cursor: pointer;
+            @include smooth-transition;
+
+            .level{
+                margin-bottom: 1rem;
+            }
+            .school{
+                margin-bottom: 1.5rem;
+            }
+            .year{
+                margin-bottom: 1rem
+            }
+            .info{
+                margin-bottom: 1rem;
+            }
+            &:hover{
+                transform: scale(1.1, 1.1)
+            }
+        }
+    }
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        transform: rotate(90deg) translate(-3rem,-4rem);
+    }
+}
