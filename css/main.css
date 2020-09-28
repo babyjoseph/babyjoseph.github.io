@@ -322,6 +322,22 @@
           transform: rotate(90deg) translate(-3rem, -4rem);
 }
 
+.contact {
+  height: 100%;
+  padding-top: 40%;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: url("/background/samplewallpaper.jpg") right;
+  background-size: cover;
+}
+
+.contact-contacts {
+  margin: 2rem auto;
+}
+
 body {
   background: #2c2a2a;
   color: #fff;

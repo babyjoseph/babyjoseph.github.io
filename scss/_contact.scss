@@ -1,0 +1,13 @@
+.contact{
+    height: 100%;
+    padding-top: 40%;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background: url("/background/samplewallpaper.jpg") right;
+    background-size: cover;
+
+    &-contacts{
+        margin: 2rem auto;
+    }
+}
