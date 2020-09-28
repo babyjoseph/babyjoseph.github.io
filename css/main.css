@@ -338,6 +338,50 @@
   margin: 2rem auto;
 }
 
+@media screen and (min-width: 480px) {
+  .home {
+    padding-top: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu_btn {
+    visibility: hidden;
+  }
+  .myNav {
+    visibility: visible;
+    width: 100%;
+  }
+  .myNav-menu {
+    display: block;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    background: transparent;
+    text-align: right;
+  }
+  .myNav-menu__item {
+    display: inline;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .home {
+    padding-top: 20%;
+  }
+  .about-bio {
+    padding-top: 20%;
+  }
+  .about-bio__title {
+    font-size: 2rem;
+  }
+  .about-bio__info {
+    font-size: 1.2rem;
+  }
+  .social-icons {
+    -webkit-transform: scale(1.5, 1.5);
+            transform: scale(1.5, 1.5);
+  }
+}
+
 body {
   background: #2c2a2a;
   color: #fff;

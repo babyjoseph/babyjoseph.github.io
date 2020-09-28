@@ -1,0 +1,46 @@
+@include myMedia-480{
+    .home{
+        padding-top: 40%;
+    }
+}
+
+@include myMedia-768{
+    .menu_btn{
+        visibility: hidden;
+    }
+    .myNav{
+        visibility: visible;
+        width: 100%;
+        
+        &-menu{
+            display: block;
+            transform: translateX(0);
+            background: transparent;
+            text-align: right;
+            
+            &__item{
+                display: inline;
+                transform: translateX(0);
+            }
+        }
+    }
+    .home {
+        padding-top: 20%;    
+    }
+
+    .about{
+        &-bio{
+            padding-top: 20%;
+            &__title{
+                font-size: 2rem;
+            }
+            &__info{
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .social-icons{
+        transform: scale(1.5, 1.5);
+    }
+}
