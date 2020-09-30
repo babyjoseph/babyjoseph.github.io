@@ -8,7 +8,9 @@
         background: url("/background/samplewallpaper.jpg") right;
         background-size: cover;
         &__info{
-            margin: 1rem auto;
+            margin: 1rem 1rem;
+            text-align: justify;
+            text-justify: inter-word;
         }
     }
 

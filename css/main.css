@@ -197,7 +197,9 @@
 }
 
 .about-bio__info {
-  margin: 1rem auto;
+  margin: 1rem 1rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .about .educations {
@@ -382,6 +384,9 @@
   }
   .about-bio__info {
     font-size: 1.2rem;
+    position: relative;
+    left: 25%;
+    width: 50%;
   }
   .project-bio {
     padding-top: 20%;
