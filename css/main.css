@@ -342,6 +342,13 @@
   .home {
     padding-top: 40%;
   }
+  .social-icons {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  .contact {
+    padding-top: 50%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -420,7 +427,7 @@ main {
 main .social-icons {
   position: fixed;
   bottom: 1rem;
-  left: 1rem;
+  left: 2rem;
 }
 
 main .social-icons a {

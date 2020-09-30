@@ -2,6 +2,12 @@
     .home{
         padding-top: 40%;
     }
+    .social-icons{
+        transform: scale(1.2,1.2);
+   }
+   .contact{
+       padding-top: 50%;
+   }
 }
 
 @include myMedia-768{
