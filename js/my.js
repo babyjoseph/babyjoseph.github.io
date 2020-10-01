@@ -24,3 +24,11 @@ menuButton.addEventListener('click', function() {
         console.log("burger closed")
     }
 });
+
+const myGitIcon = document.querySelector('#github');
+const myFbIcon = document.querySelector('#facebook');
+const myIgIcon = document.querySelector('#instagram');
+
+myGitIcon.setAttribute('href', 'https://github.com/babyjoseph');
+myFbIcon = setAttribute('href', 'https://facebook.com/josh.limpiado');
+myIgIcon = setAttribute('href', '#');
