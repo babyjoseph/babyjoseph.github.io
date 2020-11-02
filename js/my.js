@@ -31,7 +31,7 @@ const myIgIcon = document.querySelector('#instagram');
 
 myGitIcon.setAttribute('href', 'https://github.com/babyjoseph');
 myFbIcon.setAttribute('href', 'https://facebook.com/josh.limpiado');
-myIgIcon.setAttribute('href', '#');
+myIgIcon.setAttribute('href', 'https://www.instagram.com/akolangtojosh/');
 myGitIcon.setAttribute('target', '_blank');
 myFbIcon.setAttribute('target', '_blank');
 myIgIcon.setAttribute('target', '_blank');
